@@ -32,6 +32,7 @@ import java.util.Scanner;
             int bitMask = 1 << pos;
             int newSetNumber = bitMask | bitDigit;
             System.out.println("After set bit current bit in decimal is  :"+newSetNumber);
+            System.out.println("After set bit current bit in binary is  :"+Integer.toBinaryString(newSetNumber));
 
         }
 
@@ -43,6 +44,7 @@ import java.util.Scanner;
             int newBitMask = ~(bitMask);
             int newNumber = newBitMask & bitDigit;
             System.out.println("After clear a bit current bit in decimal is :"+newNumber);
+            System.out.println("After clear a bit current bit in binary is :"+Integer.toBinaryString(newNumber));
         }
 
         //UPDATE BIT SECTION
@@ -60,6 +62,7 @@ import java.util.Scanner;
                  bitMask = 1 << pos;
                 int newUpNumber = bitMask | bitDigit;
                 System.out.println(" new bit set bit in decimal is :"+" "+newUpNumber);
+                System.out.println(" new bit set bit in binary is :"+" "+Integer.toBinaryString(newUpNumber));
             }else {
                 //clear bit
                 System.out.print("Enter your bit position :");
@@ -68,6 +71,7 @@ import java.util.Scanner;
                 int newBitMask = ~(bitMask);
                 int newNumber = newBitMask & bitDigit;
                 System.out.println("After clear a bit current bit in decimal is :"+newNumber);
+                System.out.println("After clear a bit current bit in binary is :"+Integer.toBinaryString(newNumber));
             }
 
 
@@ -86,11 +90,6 @@ import java.util.Scanner;
             }
         }
 
-
-
-
-
-
     }
 
 
@@ -100,3 +99,4 @@ public class manipulation {
       allin.selectOperation();
     }
 }
+
